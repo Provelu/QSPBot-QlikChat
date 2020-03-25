@@ -1,0 +1,21 @@
+{
+    "name": "QSPBot",
+    "description": "Basic empty visualization template",
+    "type": "visualization",
+    "version": "1.0.0",
+    "icon": "cloud",
+    "author": "",
+    "homepage": "",
+    "keywords": "qlik-sense, visualization",
+    "license": "",
+    "repository": "",
+    "preview": "Bot-Logo.png",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    },
+    "bundle": {
+        "id": "QSP_Bot",
+        "name": "QSP Bot",
+        "description": "QSP Extensions for intergration with your dashboards"
+    }
+}

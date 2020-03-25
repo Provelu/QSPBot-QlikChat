@@ -1,0 +1,234 @@
+/* CSS */
+#qspbot {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+#qspbot-button {
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 50%;
+	/*background: #c4c4c4 url("/extensions/QSPBot/Bot-Logo.png") no-repeat -1px;*/
+    opacity: 72%;
+	-webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.3);
+	-webkit-transition: all .2s ease-in-out; 
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+#qspbot-button:hover {
+	opacity: 100%;
+}
+
+#qspbot-chat {
+	position: absolute;
+	border: 2px solid #009844;
+	display: none;
+	width: 400px;
+	height: 600px;
+	position: fixed;
+	bottom: 6px;
+	right: 6px;
+	background: #fff;
+	z-index: 2;
+	opacity: 1;
+}
+
+#qspbot-chatTitleBar {
+	font-family: QlikView Sans,sans-serif;
+    font-weight: 500;
+	color: #ffffff;
+	background-color: #009844;
+	width: calc(100% - 20px);
+	height: 30px;
+	padding: 5px 10px;
+	line-height: 30px;
+	font-size: 22px;
+	cursor: move;
+}
+
+#qspbot-chatTitleContainer {
+	max-width: 320px;
+	width: 320px;
+	white-space: nowrap; 
+  	overflow: hidden;
+  	text-overflow: ellipsis; 
+	float: left;
+}
+
+#qspbot-chatWindow {
+	width: calc(100% - 20px);
+	height: calc(100% - 90px);
+	padding: 5px 10px;
+	overflow-y: scroll;
+}
+
+#qspbot-messageWindow {
+	width: 100%;
+	height: 40px;
+}
+
+#qspbot-messageInput {
+	float: left;
+	width: calc(100% - 102px);
+	height: 18px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	resize: vertical;
+}
+
+#qspbot-emojiTable {
+	width: 392px;
+    height: 120px;
+    background: #eee;
+    z-index: 2000000;
+    border: 2px solid #009844;
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: -2px;
+	padding: 4px;
+}
+
+#qspbot-emojiInputButton {
+	float: left;
+	width: 20px;
+	height: 21px;
+    padding: 9px 10px 10px 10px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #009844;
+	color: #fff;
+	font-size: 20px;
+}
+
+#qspbot-messageSendButton {
+	float: left;
+	width: 20px;
+	height: 21px;
+    padding: 9px 10px 10px 10px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #009844;
+	color: #fff;
+	font-size: 20px;
+}
+
+.qspbot-emojis {
+    text-align: center;
+    width: 29px;
+    height: 30px;
+    font-size: 20px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.qspbot-message {
+	padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+
+.qspbot-messageTitle {
+	font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.qspbot-messageSubTitle {
+	font-weight: 500;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.send-button {
+	opacity: 1;
+	width: 22px;
+	height: 20px;
+}
+
+.emoji-button {
+	font-size: larger;
+	opacity: 1;
+	width: 22px;
+	height: 20px;
+}
+
+.send-button:hover, .emoji-button:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out; 
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+.qspbot-fullscreen {
+	opacity: 1;
+	float: right;
+	margin-right: 16px;
+}
+
+.qspbot-fullscreen:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out; 
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+.qspbot-chatCloseButton {
+	opacity: 1;
+	float: right;
+}
+.qspbot-chatCloseButton:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out; 
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+div[tid="title1"] { 
+	background-image: url("../extensions/QSPBot/qsp_bot.png"); 
+	height: 76px; 
+}
+
+div[tid="textbox6"] { 
+	font-size: 10px; 
+	font-style: italic;
+}
+
+div[tid="qspbotSection"] { 
+	background-image: url("../extensions/QSPBot/background.png"); 
+	background-position: center 20%; 
+	background-repeat:no-repeat;
+}
+
+div[class="pp-expandable-list-content ng-scope"] {
+	background: transparent;
+}
+
+@keyframes expand {
+	0%   {top: calc(100% - 610px ); left: calc(100% - 410px ); }
+	100% {top: 6px; left: 6px;}
+}
+
+@keyframes collapse {
+	0%   {top: 6px; left: 6px;}
+	100% {top: calc(100% - 610px ); left: calc(100% - 410px );}
+}
